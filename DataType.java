@@ -1,5 +1,5 @@
 
-
+import java.util.*;
 // this the types of datatype
 /*int
 long 
@@ -45,7 +45,7 @@ bytes*/
     }
 }*/
 
-class DataType
+/*class DataType
 {
     public static void main(String[] args)
     {
@@ -57,5 +57,41 @@ class DataType
 
         System.out.println(a + b + c + d );
 
+    }
+}*/
+
+public class DataType {
+
+    public static void main(String[] args) {
+        System.out.println("PRIMITIVE DATATYPES");
+
+        int x =10;
+        int y = x;
+        System.out.print("INITIALLY : ");
+        System.out.print("x = " + x + " ,");
+        System.out.println(" y = " + y);
+        y = 30;
+        System.out.println("After changing y to 30 : x = " + x + "," + " y = " + y);
+
+        System.out.println("**Only value of y is affected here because of Primitive Data Type");
+
+        System.out.println("REFERENCE DATA TYPES");
+        System.out.println("INITIALLY");
+
+        int[] c = {10,20,30,40};
+
+        System.out.println("Array c : " + Arrays.toString(c));
+
+        int[] d = c;
+        System.out.println("Array d : " + Arrays.toString(d));
+
+        System.out.println("After Modification");
+
+        d[1] = 256;
+        System.out.println("Array c : " + Arrays.toString(c));
+        System.out.println("Array d : " + Arrays.toString(c));
+
+        
+        System.out.println("**Here value of c[1] is also affected because of Reference Data Type");
     }
 }
